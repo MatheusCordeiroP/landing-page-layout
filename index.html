@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Empresa Financeira - Para sua Empresa</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link href="./css/index.scss" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav
+      class="n-sidebar primary-color primary-color-bg"
+      style="display: none; padding-top: 150px; right: 0; z-index: 2"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="closeNav()"
+        class="primary-color-bg close-sidebar"
+        style="padding: 0 12px"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          class="bi bi-x"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+      </a>
+      <div class="text-align-center">
+        <a
+          class="hover-primary-color-dark-bg sidebar-item"
+          data-toggle="collapse"
+          href="#collapse-1"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapse-1"
+          >Acesso Rápido</a
+        >
+        <div class="collapse" id="collapse-1">
+          <a
+            class="hover-primary-color-dark-bg sidebar-sub-item"
+            onclick="closeNav()"
+            >Localizar Agência</a
+          >
+          <a
+            class="hover-primary-color-dark-bg sidebar-sub-item"
+            onclick="closeNav()"
+            >Fale Conosco</a
+          >
+          <a
+            class="hover-primary-color-dark-bg sidebar-sub-item"
+            onclick="closeNav()"
+            >Política de Privacidade</a
+          >
+          <a
+            class="hover-primary-color-dark-bg sidebar-sub-item"
+            onclick="closeNav()"
+            >2ª via de boleto</a
+          >
+          <a
+            class="hover-primary-color-dark-bg sidebar-sub-item"
+            onclick="closeNav()"
+            >Atendimento</a
+          >
+          <a
+            class="hover-primary-color-dark-bg sidebar-sub-item"
+            onclick="closeNav()"
+            >Trabalhe Conosco</a
+          >
+        </div>
+
+        <a
+          href="#portfolio"
+          class="hover-primary-color-dark-bg sidebar-item"
+          onclick="closeNav()"
+          >Para Você</a
+        >
+        <a
+          href="#about"
+          class="hover-primary-color-dark-bg sidebar-item"
+          onclick="closeNav()"
+          >Para sua Empresa</a
+        >
+        <a
+          href="#contact"
+          class="hover-primary-color-dark-bg sidebar-item"
+          onclick="closeNav()"
+          >Para seu Agronegócio</a
+        >
+      </div>
+    </nav>
+    <!-- End of Sidebar -->
+
+    <!-- Top Page Content -->
+    <div
+      class="row navigation-container no-margin no-padding"
+      style="margin-right: 0px"
+    >
+      <div class="d-flex justify-content-between" style="margin-right: 0px">
+        <div class="col-4 align-self-start">
+          <a class="navbar-brand company-name primary-color" href="#"
+            >Empresa Financeira</a
+          >
+        </div>
+
+        <div class="col-6 no-margin hide-on-1100">
+          <div class="d-flex justify-content-between">
+            <div class="col">
+              <div class="d-flex justify-content-left access-group">
+                <p class="d-inline-flex top-page-text">Acessar conta com</p>
+                <div class="d-inline-flex">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="CNPJ"
+                    aria-label="CNPJ"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 d-flex align-items-end flex-column">
+              <button
+                class="primary-color-bg open-account-button"
+                type="button"
+              >
+                <p>Abra sua conta</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2 no-margin no-padding">
+          <div class="float-end">
+            <div class="no-padding no-margin py-0 navbar-button-group">
+              <button
+                class="secondary-color-darker-bg navbar-button"
+                type="button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="#fff"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg></button
+              ><button
+                class="primary-color-bg navbar-button"
+                type="button"
+                onclick="openNav()"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  fill="#fff"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Top Page Content -->
+
+    <!-- Main Container Content -->
+    <div class="div-container">
+      <div class="div-item">
+        <h1 class="h1-title secondary-color-dark">
+          Nós temos as melhores oportunidades
+          <br />
+          <b class="primary-color-light">para você</b>
+        </h1>
+        <p class="p-title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at
+          sodales ex. Donec rutrum nibh eu velit pretium, nec elementum enim
+          venenatis. Donec elit lectus, sagittis at euismod quis, cursus
+          elementum turpis. Vivamus feugiat neque eget est mollis convallis.
+        </p>
+      </div>
+      <div class="div-img"></div>
+      <div class="div-menu">
+        <div>
+          <h4 style="color: #0bc908">Para você</h4>
+          <p class="menu-link hover-primary-color">Conta Corrente</p>
+          <p class="menu-link hover-primary-color">Cartões</p>
+          <p class="menu-link hover-primary-color">Novo Pix</p>
+          <p class="menu-link hover-primary-color">Consórcios</p>
+          <p class="menu-link hover-primary-color">Crédito</p>
+          <p class="menu-link hover-primary-color">Investimentos</p>
+          <p class="menu-link hover-primary-color">Pagamentos</p>
+          <p class="menu-link hover-primary-color">Previdência</p>
+          <p class="menu-link hover-primary-color">Máquina de Cartões</p>
+          <p class="menu-link hover-primary-color">Seguros</p>
+          <p class="menu-link hover-primary-color">Câmbio</p>
+          <p class="menu-link hover-primary-color">Certificado Digital</p>
+          <p class="menu-link hover-primary-color">Momentos</p>
+        </div>
+
+        <div>
+          <h4 class="menu-link secondary-color-dark hover-primary-color">
+            Para sua Empresa
+          </h4>
+          <h4 class="menu-link secondary-color-dark hover-primary-color">
+            Para seu Agronegocio
+          </h4>
+        </div>
+      </div>
+    </div>
+    <!-- End of Main Container Content -->
+
+    <script>
+      // Open and close sidebar
+      function openNav() {
+        //        document.getElementById("mySidebar").style.width = "50%";
+        document.getElementById("mySidebar").style.display = "block";
+      }
+      function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
